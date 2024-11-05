@@ -1,0 +1,23 @@
+.header {
+    padding: 0 165px;
+
+}
+
+.header_content {
+    display: flex;
+}
+
+.top_header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top_header_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_header_right {
+    
+}
