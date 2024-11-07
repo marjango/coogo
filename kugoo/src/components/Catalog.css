@@ -3,18 +3,37 @@
     margin: 30px 30px;
     height: 421px;
     background: radial-gradient(58.73% 541.94% at 75.14% 62.23%, #A6A9FF 0%, #6F73EE 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    /* border-radius: 10px;
+    border-radius: 10px;
     align-self: center;
-    background-image: url(../img/scooter.svg);
-    background-size: 30$; */
+    position: relative;
+}
+
+.scooter {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+}
+.kirin {
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+}
+
+.group {
+    position: absolute;
+    bottom: 98px;
+    right: 426px;
 }
 
 .newSpan {
-    width: 53px;
-    height: 20px;
-    border: 1px;
-    border-color: white;
+    margin-top: 40px;
+    margin-left: 135px;
+    width: 74px;
+    height: 27px;
     background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    color: white;
 }
 
 .catalog_content {
@@ -55,4 +74,68 @@
     border: none;
     background-color: white;
     color: #6F73EE;
+    padding: 15px 25px;
 }
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 165px;
+}
+
+.info h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 25px;
+    color: #282739;
+    text-transform: uppercase;
+}
+
+.info p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #282739;
+}
+
+.first, .second, .third, .forth {
+    padding: 0;
+}
+
+.forth {
+    border: 1px solid #5D6C7B1A;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 190px;
+    height: 76px;
+    position: relative;
+}
+
+.yandexImg {
+    margin: 10px;
+    width: 56px;
+    height: 56px;
+    background-color: #FC3F1D;
+    border-radius: 5px;
+}
+
+.forth_text {
+
+}
+
+.forth_text p {
+    font-size: 12px;
+    color:  #5D6C7B;
+    font-weight: 400;
+    position: absolute;
+    bottom: 11px;
+    right: 46px;
+}
+
+.star-icon {
+    position: absolute;
+    top: 40px;
+    left: 84px;
+}
+
