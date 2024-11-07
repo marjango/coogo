@@ -1,12 +1,14 @@
 import React from "react";
 import './Header.css';
-import viber from '../img/viber.png'
-import whatsapp from '../img/whatsapp.png'
-import telegram from '../img/telegram.png'
-import plus from '../img/plus.png'
-import balance from '../img/balance.png'
-import heart from '../img/Icon/Outlined/Heart.png'
-import shoppingCart from '../img/shopping-cart.png'
+import viber from '../img/viber.svg'
+import whatsapp from '../img/whatsapp.svg'
+import telegram from '../img/telegram.svg'
+import plus from '../img/plus.svg'
+import balance from '../img/balance.svg'
+import heart from '../img/Icon/Outlined/Heart.svg'
+import shoppingCart from '../img/shopping-cart.svg'
+import search from '../img/Icon/Outlined/Search.svg'
+import promoImg from '../img/%.svg'
 
 
 function Header() {
@@ -29,10 +31,28 @@ function Header() {
                     <img src={plus} alt="" />
                 </div>
             </div>
+            <span className="border"></span>
             <div className="main_header">
                 <h1>KUGOO</h1>
-                <button className="catalogBtn">Каталог</button>
-                <input type="text" placeholder="Искать самокат KUGOO"></input>
+                <button className="catalogBtn">
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="button-text">Каталог</span>
+                </button>
+                <div className="search_container">
+                    <select class="dropdown">
+                        <option value="all">Везде</option>
+                        <option value="category1">Категория 1</option>
+                        <option value="category2">Категория 2</option>
+                    </select>
+                    <input type="text" className="search-input" placeholder="Искать самокат KUGOO"></input>
+                    <button class="search-button">
+                        <img src={search} alt="Поиск"></img>
+                    </button>
+                </div>
                 <div className="cart_content">
                     <img src={balance} alt="" />
                     <img src={heart} alt="" />
@@ -40,11 +60,23 @@ function Header() {
                     <p>Корзина</p>
                 </div>
             </div>
-            <div className="brief_header">
-
+            <div className="menu">
+                <div className="menu_content">
+                    <a href="#!">О магазине</a>
+                    <a href="#!">Доставка и оплата</a>
+                    <a href="#!">Тест-драйв</a>
+                    <a href="#!">Блог</a>
+                    <a href="#!">Контакты</a>
+                    <a href="#!">Акции</a>
+                    {/* <div class="promo">
+                        <span class="promo-text">Акции</span>
+                        <img src={promoImg} alt="" className="promo-icon"/>
+                    </div> */}
+                </div>
             </div>
         </div>
       </header>
+      
     );
   }
   
