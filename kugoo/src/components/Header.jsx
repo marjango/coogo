@@ -9,6 +9,7 @@ import heart from '../img/Icon/Outlined/Heart.svg'
 import shoppingCart from '../img/shopping-cart.svg'
 import search from '../img/Icon/Outlined/Search.svg'
 import promoImg from '../img/%.svg'
+import {Link} from 'react-router-dom'
 
 
 function Header() {
@@ -62,12 +63,12 @@ function Header() {
             </div>
             <div className="menu">
                 <div className="menu_content">
-                    <a href="#!">О магазине</a>
-                    <a href="#!">Доставка и оплата</a>
-                    <a href="#!">Тест-драйв</a>
-                    <a href="#!">Блог</a>
-                    <a href="#!">Контакты</a>
-                    <a href="#!">Акции</a>
+                    <Link to='/about'>О магазине</Link>
+                    <Link to='/delivery'>Доставка и оплата</Link>
+                    <Link to='/testDrive'>Тест-драйв</Link>
+                    <Link to='/blog'>Блог</Link>
+                    <Link to='/contacts'>Контакты</Link>
+                    <Link to='/discounts'>Акции</Link>
                     {/* <div class="promo">
                         <span class="promo-text">Акции</span>
                         <img src={promoImg} alt="" className="promo-icon"/>
