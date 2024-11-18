@@ -1,0 +1,50 @@
+.cardContainer {
+    margin-top: 100px;
+    margin-left: 165px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2.1fr);
+}
+
+.card {
+    width: 255px;
+    height: 492px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1.5px solid #EAEBED;
+    border-radius: 10px;
+}
+
+.cardTitle h1 {
+    font-size: 18px;
+    color: #282739;
+    
+}
+
+.itemDesc {
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(2.1fr);
+     position: relative;
+}
+
+.itemDesc p {
+    color: #5D6C7B;
+    font-size: 14px;
+}
+
+.itemDesc img {
+    position: absolute;
+    top: 50%;
+    left: -2px;
+}
+
+.cardBtn button{
+    width: 206px;
+    height: 37px;
+    border: none;
+    background-color: #6F73EE;
+    color: white;
+    border-radius: 5px;
+}
