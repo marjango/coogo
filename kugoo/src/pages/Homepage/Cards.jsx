@@ -13,7 +13,7 @@ export class Cards extends Component {
             items:[
                 {
                     id:1,
-                    img: {kugoom4},
+                    img: kugoom4,
                     name: 'Kugoo Kirin M4',
                     price: 29900  + '₽',
                     charge: 2000  + 'mAh',
@@ -23,7 +23,7 @@ export class Cards extends Component {
                 },
                 {
                     id:1,
-                    img: {kugoom4},
+                    img: kugoom4,
                     name: 'Kugoo Kirin M4',
                     price: 29900  + '₽',
                     charge: 2000  + 'mAh',
@@ -33,7 +33,7 @@ export class Cards extends Component {
                 },
                 {
                     id:1,
-                    img: {kugoom4},
+                    img: kugoom4,
                     name: 'Kugoo Kirin M4',
                     price: 29900  + '₽',
                     charge: 2000  + 'mAh',
@@ -43,7 +43,7 @@ export class Cards extends Component {
                 },
                 {
                     id:1,
-                    img: {kugoom4},
+                    img: kugoom4,
                     name: 'Kugoo Kirin M4',
                     price: 29900  + '₽',
                     charge: 2000  + 'mAh',
@@ -53,7 +53,7 @@ export class Cards extends Component {
                 },
                 {
                     id:1,
-                    img: {kugoom4},
+                    img: kugoom4,
                     name: 'Kugoo Kirin M4',
                     price: 29900  + '₽',
                     charge: 2000  + 'mAh',
@@ -63,7 +63,7 @@ export class Cards extends Component {
                 },
                 {
                     id:1,
-                    img: {kugoom4},
+                    img: kugoom4,
                     name: 'Kugoo Kirin M4',
                     price: 29900  + '₽',
                     charge: 2000  + 'mAh',
@@ -73,7 +73,7 @@ export class Cards extends Component {
                 },
                 {
                     id:1,
-                    img: {kugoom4},
+                    img: kugoom4,
                     name: 'Kugoo Kirin M4',
                     price: 29900  + '₽',
                     charge: 2000  + 'mAh',
@@ -83,7 +83,7 @@ export class Cards extends Component {
                 },
                 {
                     id:1,
-                    img: {kugoom4},
+                    img: kugoom4,
                     name: 'Kugoo Kirin M4',
                     price: 29900  + '₽',
                     charge: 2000  + 'mAh',
@@ -101,7 +101,7 @@ export class Cards extends Component {
         <div className={s.cardContainer}>
           {items.map((item) => (
             <div key={item.id} className={s.card}>
-              <img src={'../../img/' + item.img} alt={item.name} />
+              <img src={item.img} alt={item.name} />
               <div className={s.cardTitle}>
                 <h1>{item.name}</h1>
                 <div className={s.itemDesc}>
@@ -122,19 +122,11 @@ export class Cards extends Component {
               </div>
             </div>
           ))}
-          {/* <ProductList products={products} addToCart={addToCart} /> */}
         </div>
         
     );
   }
-    // let cartCount = 0;
-    // function addToCart() {
-    //     cartCount++; 
-    //     updateCartButton(); 
-    // }
-    // function updateCartButton() {
-    //     document.getElementById('cartButton').textContent = cartCount;
-    // }
+
 }
 
 export default Cards
