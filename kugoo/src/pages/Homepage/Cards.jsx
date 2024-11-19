@@ -105,17 +105,29 @@ export class Cards extends Component {
               <div className={s.cardTitle}>
                 <h1>{item.name}</h1>
                 <div className={s.itemDesc}>
-                    <img src={accumulator} alt="" />
-                    <p>{item.charge}</p>
-                    <img src={power} alt="" />
-                    <p>{item.capacity}</p>
-                    <img src={speedometer} alt="" />
-                    <p>{item.speed}</p>
-                    <img src={timer} alt="" />
-                    <p>{item.time}</p>
+                    <div className={s.itemDescription}>
+                        <img src={accumulator} alt="" />
+                        <p>{item.charge}</p>
+                    </div>
+                    <div className={s.itemDescription}>
+                        <img src={power} alt="" />
+                        <p>{item.capacity}</p>
+                    </div>
+                    <div className={s.itemDescription}>
+                        <img src={speedometer} alt="" />
+                        <p>{item.speed}</p>
+                    </div>
+                    <div className={s.itemDescription}>
+                        <img src={timer} alt="" />
+                        <p>{item.time}</p>
+                    </div>
                 </div>
+                
                 <h2>{item.price}</h2>
-
+                <div className="actions">
+                    <button className={s.addtoCart}></button>
+                    <button className={s.addtoWish}> </button>
+                </div>
               </div>
               <div className={s.cardBtn}>
               <button>Купить в 1 клик</button>

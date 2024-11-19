@@ -11,9 +11,16 @@
     height: 492px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     border: 1.5px solid #EAEBED;
     border-radius: 10px;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .cardTitle h1 {
@@ -23,10 +30,19 @@
 }
 
 .itemDesc {
+    width: 195px;
+    height: 52px;
      display: grid;
      grid-template-columns: repeat(2,1fr);
      grid-template-rows: repeat(2.1fr);
-     position: relative;
+}
+
+.itemDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
 }
 
 .itemDesc p {
@@ -35,12 +51,31 @@
 }
 
 .itemDesc img {
-    position: absolute;
-    top: 50%;
-    left: -2px;
+   width: 18px;
+   height: 18px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.addtoCart {
+    border-radius: 50%;
+    border: 1.3px solid #EAEBED;
+    background-color: transparent;
+    background-image: url(../../img/shopping-cart.svg);
+}
+
+.addtoWish
+
+.actions img {
+    width: 40px;
+    height: 40px;
 }
 
 .cardBtn button{
+    margin: 0 0 20px 0;
     width: 206px;
     height: 37px;
     border: none;
