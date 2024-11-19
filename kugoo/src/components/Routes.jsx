@@ -1,21 +1,21 @@
 import {Routes, Route} from 'react-router-dom'
-import About from '../pages/about/About.jsx'
-import Blog from '../pages/blog/Blog.jsx'
-import Contacts from '../pages/contacts/Contacts.jsx'
-import Delivery from '../pages/delivery/Delivery.jsx'
-import Discounts from '../pages/discount/Discount'
-import Test from '../pages/test-drive/Test-drive'
-import Homepage from '../pages/Homepage/Homepage.jsx' 
+import About from './../pages/about/about.jsx'
+import Blog from './../pages/blog/blog.jsx'
+import Contacts from './../pages/contacts/contacts.jsx'
+import Delivery from './../pages/delivery/delivery.jsx'
+import Discounts from './../pages/discount/Discount'
+import Test from './../pages/test-drive/Test-drive'
+import Homepage from './../pages/Homepage/Homepage.jsx' 
 export default function AppRoutes(){
     return (
         <Routes>
-        <Route path='*' element={<Homepage/>}/>
-        <Route path='/about' element={<About/>} />
-        <Route path='/blog' element={<Blog/>} />
-        <Route path='/contacts' element={<Contacts/>} />
-        <Route path='/delivery' element={<Delivery/>} />
-        <Route path='/discounts' element={<Discounts/>} />
-        <Route path='/testDrive' element={<Test/>} />  
+            <Route path='*' element={<Homepage/>}/>
+            <Route path='/About' element={<About/>} />
+            <Route path='/Blog' element={<Blog/>} />
+            <Route path='/Contacts' element={<Contacts/>} />
+            <Route path='/Delivery' element={<Delivery/>} />
+            <Route path='/Discounts' element={<Discounts/>} />
+            <Route path='/TestDrive' element={<Test/>} />  
         </Routes>
     )
     

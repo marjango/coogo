@@ -73,12 +73,12 @@ function Header() {
             </div>
             <div className={s.menu}>
                 <div className={s.menuContent}>
-                    <Link to='/about'>О магазине</Link>
-                    <Link to='/delivery'>Доставка и оплата</Link>
-                    <Link to='/testDrive'>Тест-драйв</Link>
-                    <Link to='/blog'>Блог</Link>
-                    <Link to='/contacts'>Контакты</Link>
-                    <Link to='/discounts' className={s.discountsMenu}>Акции<img src={promoImg} alt="" className="promoIcon"/></Link>
+                    <Link to='/About'>О магазине</Link>
+                    <Link to='/Delivery'>Доставка и оплата</Link>
+                    <Link to='/TestDrive'>Тест-драйв</Link>
+                    <Link to='/Blog'>Блог</Link>
+                    <Link to='/Contacts'>Контакты</Link>
+                    <Link to='/Discounts' className={s.discountsMenu}>Акции<img src={promoImg} alt="" className="promoIcon"/></Link>
                 </div>
             </div>
         </div>
