@@ -122,12 +122,14 @@ export class Cards extends Component {
                         <p>{item.time}</p>
                     </div>
                 </div>
-                
-                <h2>{item.price}</h2>
-                <div className="actions">
-                    <button className={s.addtoCart}></button>
-                    <button className={s.addtoWish}> </button>
+                <div className={s.content}>
+                    <h2>{item.price}</h2>
+                    <div className={s.actions}>
+                        <button className={s.addtoCart}></button>
+                        <button className={s.addtoWish}> </button>
+                    </div>
                 </div>
+                
               </div>
               <div className={s.cardBtn}>
               <button>Купить в 1 клик</button>

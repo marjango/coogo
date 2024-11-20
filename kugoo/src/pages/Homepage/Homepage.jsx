@@ -47,7 +47,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-            <Cards/>
+            <Cards/> 
         </div>
     );
 }

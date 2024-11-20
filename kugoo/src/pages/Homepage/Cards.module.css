@@ -55,24 +55,40 @@
    height: 18px;
 }
 
+.content {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
 .actions {
     display: flex;
     gap: 10px;
 }
 
 .addtoCart {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 1.3px solid #EAEBED;
     background-color: transparent;
     background-image: url(../../img/shopping-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.addtoWish
-
-.actions img {
+.addtoWish {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    border: 1.3px solid #EAEBED;
+    background-color: transparent;
+    background-image: url(../../img/Icon/Outlined/Heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 .cardBtn button{
     margin: 0 0 20px 0;
