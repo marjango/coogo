@@ -105,22 +105,14 @@ export class Cards extends Component {
               <div className={s.cardTitle}>
                 <h1>{item.name}</h1>
                 <div className={s.itemDesc}>
-                    <div className={s.itemDescription}>
-                        <img src={accumulator} alt="" />
-                        <p>{item.charge}</p>
-                    </div>
-                    <div className={s.itemDescription}>
-                        <img src={power} alt="" />
-                        <p>{item.capacity}</p>
-                    </div>
-                    <div className={s.itemDescription}>
-                        <img src={speedometer} alt="" />
-                        <p>{item.speed}</p>
-                    </div>
-                    <div className={s.itemDescription}>
-                        <img src={timer} alt="" />
-                        <p>{item.time}</p>
-                    </div>
+                    <img src={accumulator} alt="" />
+                    <p>{item.charge}</p>
+                    <img src={power} alt="" />
+                    <p>{item.capacity}</p>
+                    <img src={speedometer} alt="" />
+                    <p>{item.speed}</p>
+                    <img src={timer} alt="" />
+                    <p>{item.time}</p>
                 </div>
                 <div className={s.content}>
                     <h2>{item.price}</h2>
