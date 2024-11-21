@@ -98,38 +98,60 @@ export class Cards extends Component {
   render() {
     const { items } = this.state;
     return (
-        <div className={s.cardContainer}>
-          {items.map((item) => (
-            <div key={item.id} className={s.card}>
-              <img src={item.img} alt={item.name} />
-              <div className={s.cardTitle}>
-                <h1>{item.name}</h1>
-                <div className={s.itemDesc}>
-                    <img src={accumulator} alt="" />
-                    <p>{item.charge}</p>
-                    <img src={power} alt="" />
-                    <p>{item.capacity}</p>
-                    <img src={speedometer} alt="" />
-                    <p>{item.speed}</p>
-                    <img src={timer} alt="" />
-                    <p>{item.time}</p>
+        <div className={s.cardSection}>
+            <div className={s.cardHeader}>
+                <h1>Электросамокаты</h1>
+                <div className={s.btnSwitcher}>
+                    <button className={s.btn1}>Хиты продаж</button>
+                    <button className={s.btn2}>Для города</button>
+                    <button className={s.btn2}>Для взрослых</button>
+                    <button className={s.btn2}>Для детей</button>
                 </div>
-                <div className={s.content}>
-                    <h2>{item.price}</h2>
-                    <div className={s.actions}>
-                        <button className={s.addtoCart}></button>
-                        <button className={s.addtoWish}> </button>
+            </div>
+            <div className={s.cardContainer}>
+            {items.map((item) => (
+                <div key={item.id} className={s.card}>
+                <div className={s.itemImg}>
+                    <img src={item.img} alt={item.name} />
+                </div>
+                <div className={s.cardTitle}>
+                    <h1>{item.name}</h1>
+                    <div className={s.itemDesc}>
+                        <div className={s.itemDescription}>
+                            <img src={accumulator} alt="" />
+                            <p>{item.charge}</p>
+                        </div>
+                        <div className={s.itemDescription}>
+                            <img src={power} alt="" />
+                            <p>{item.capacity}</p>
+                        </div>
+                        <div className={s.itemDescription}>
+                            <img src={speedometer} alt="" />
+                            <p>{item.speed}</p>
+                        </div>
+                        <div className={s.itemDescription}>
+                            <img src={timer} alt="" />
+                            <p>{item.time}</p>
+                        </div>
+                    </div>
+                    <div className={s.content}>
+                        <h2>{item.price}</h2>
+                        <div className={s.actions}>
+                            <button className={s.addtoCart}></button>
+                            <button className={s.addtoWish}> </button>
+                        </div>
+                    </div>
+                    <div className={s.cardBtn}>
+                        <button>Купить в 1 клик</button>
                     </div>
                 </div>
-                
-              </div>
-              <div className={s.cardBtn}>
-              <button>Купить в 1 клик</button>
-              </div>
+                </div>
+            ))}
+            {/* <div className={s.toSeeAll}>
+                <button className={s.btnToSeeAll}>Смотреть все</button>
+            </div> */}
             </div>
-          ))}
         </div>
-        
     );
   }
 

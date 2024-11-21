@@ -1,6 +1,8 @@
 import React from "react";
 import s from './Homepage.module.css'; 
 import Cards from './Cards'
+import Footer from '../../components/Footer'
+
 import kirin from '../../img/kirin.svg';
 import scooter from '../../img/scooter.svg';
 import group from '../../img/Group.svg';
@@ -48,6 +50,7 @@ function Homepage() {
                 </div>
             </div>
             <Cards/> 
+            <Footer/>
         </div>
     );
 }

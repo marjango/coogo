@@ -1,10 +1,8 @@
-@charset "UTF-8";
 .headerContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .topHeader {
   margin: 0 165px;
   display: flex;
