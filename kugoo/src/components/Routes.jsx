@@ -6,6 +6,9 @@ import Delivery from './../pages/delivery/delivery.jsx'
 import Discounts from './../pages/discount/Discount'
 import Test from './../pages/test-drive/Test-drive'
 import Homepage from './../pages/Homepage/Homepage.jsx' 
+import Cart from '../pages/cart/Cart.jsx'
+import Catalog from './../pages/Homepage/Catalog.jsx' 
+
 export default function AppRoutes(){
     return (
         <Routes>
@@ -16,6 +19,8 @@ export default function AppRoutes(){
             <Route path='/Delivery' element={<Delivery/>} />
             <Route path='/Discounts' element={<Discounts/>} />
             <Route path='/TestDrive' element={<Test/>} />  
+            <Route path='/Cart' element={<Cart/>} />  
+            <Route path='/catalog' element={<Catalog/>} />  
         </Routes>
     )
     

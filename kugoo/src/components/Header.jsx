@@ -1,18 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Catalog from "../pages/Homepage/Catalog";
 
 import s from'./Header.module.css';
-// Пишем модули css для каждого файла и среды и всегда 
-// экспортируем их только одним методом import s from './.....', благодоря этому
-// методу ты в дальнейшем можешь повторяться в классах в другой среде, 
-// например пишем классы для App, но при этом хотим так же 
-// написать классы для Header очень сложно будет не повторяться в классах 
-// так как будут большие проэкты и там придется привыкать к 
-// этому методу, так что лучше сейчас начать 
-
 import viber from '../img/viber.svg'
 import whatsapp from '../img/whatsapp.svg'
 import telegram from '../img/telegram.svg'
-import plus from '../img/plus.svg'
 import balance from '../img/balance.svg'
 import heart from '../img/Icon/Outlined/Heart.svg'
 import shoppingCart from '../img/shopping-cart.svg'
@@ -22,7 +15,33 @@ import promoImg from '../img/Icon/Outlined/promo.svg'
 import {Link} from 'react-router-dom'
 
 
+
 function Header() {
+
+    // const [value, setValue] = useState({name:'', agree:false});
+    // const handleChange = (event) => {
+    //     const {name, value, type, checked} = event.target;
+    //     setValue((prevValue) => ({
+    //         ...prevValue, 
+    //         [name]: type === "checkbox" ? checked : value
+    //     })) 
+    // }
+
+    const [isCatalogOpen, setIsCatalogOpen] = useState(false);
+
+    const openCatalog = () => {
+        setIsCatalogOpen(true);
+    };
+
+    const closeCatalog = () => {
+        setIsCatalogOpen(false);
+    };
+
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
+
     return (
     <header className={s.header}>
         <div className={s.headerContent}>
@@ -39,27 +58,31 @@ function Header() {
                 </div>
                 <div className={s.topHeaderRight}>
                     <p>+7 (800) 505-54-61</p>
-                    <img src={plus} alt="" />
+                    <button className={s.plus} onClick={openModal}></button>
+                    
                 </div>
             </div>
             <span className={s.border}></span>
             <div className={s.mainHeader}>
                 <Link className={s.logoLink} to='/main'>KUGOO</Link>
-                <button className={s.catalogBtn}>
+
+                <button onClick={openCatalog}  className={s.catalogBtn}>
                 <div className={s.burgerMenu}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <span className={s.buttonText}>Каталог</span>
+                <p className={s.buttonText} >Каталог</p>
                 </button>
+                {/* Render Catalog as Pop-up */}
+                {isCatalogOpen && <Catalog onClose={closeCatalog} />}
                 <div className={s.searchContainer}>
                     <select className={s.dropdown}>
                         <option value="all">Везде</option>
                         <option value="category1">Категория 1</option>
                         <option value="category2">Категория 2</option>
                     </select>
-                    <input type="text" className={s.searchInput} placeholder="Искать самокат KUGOO"></input>
+                    <input name="name" type="text" className={s.searchInput} placeholder="Искать самокат KUGOO"></input>
                     <button className={s.searchButton}>
                         <img src={search} alt="Поиск"></img>
                     </button>
@@ -68,7 +91,7 @@ function Header() {
                     <img src={balance} alt="" />
                     <img src={heart} alt="" />
                     <img src={shoppingCart} alt="" />
-                    <p>Корзина</p>
+                    <Link to='/Cart'>Корзина</Link>
                 </div>
             </div>
             <div className={s.menu}>
