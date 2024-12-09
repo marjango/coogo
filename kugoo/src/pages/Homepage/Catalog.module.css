@@ -21,6 +21,7 @@
     max-width: 800px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
+    display: flex;
 }
 
 /* Close Button */
@@ -97,4 +98,8 @@
     margin-bottom: 5px;
     color: #555;
     font-size: 14px;
+}
+
+.navContent {
+    width: auto;
 }

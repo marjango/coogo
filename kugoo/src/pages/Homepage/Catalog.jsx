@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import s from "./Catalog.module.css";
 import scooter from "../../img/electric-scooter 1.svg";
 import scooter2 from "../../img/scooter-2 1.svg";
@@ -18,35 +18,49 @@ function Catalog({ onClose }) {
     const features = ["Внедорожный", "Городской", "Зимний", "С сиденьем", "Без сиденья"];
     const audiences = ["Для детей и подростков", "Для взрослых", "Для пенсионеров"];
 
+    // Состояние для активной вкладки
+    const [activeTab, setActiveTab] = useState(0);
+
     return (
         <div
             className={s.modalOverlay}
-            onClick={onClose} // Close modal when clicking on overlay
+            onClick={onClose} // Закрыть модальное окно при клике на оверлей
         >
             <div
                 className={s.modalContent}
-                onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking inside
+                onClick={(e) => e.stopPropagation()} // Предотвращаем закрытие при клике внутри
             >
                 <div className={s.catalogContainer}>
+                    {/* Меню с вкладками */}
                     <div className={s.navMenu}>
                         {categories.map((category, index) => (
-                            <div key={index} className={s.navItem}>
+                            <div
+                                key={index}
+                                className={`${s.navItem} ${activeTab === index ? s.active : ""}`}
+                                onClick={() => setActiveTab(index)} // Устанавливаем активную вкладку
+                            >
                                 <img src={category.icon} alt={category.section} className={s.icon} />
                                 {category.section}
                             </div>
                         ))}
                     </div>
-                    <div className={s.detailsContainer}>
+
+                    {/* Контент активной вкладки */}
+                    <div className={s.tabContent}>
                         <div className={s.column}>
-                            <h3 className={s.columnTitle}>Особенности</h3>
+                            <h4>Особенности</h4>
                             {features.map((feature, index) => (
-                                <div key={index} className={s.detailItem}>{feature}</div>
+                                <div key={index} className={s.detailItem}>
+                                    {feature}
+                                </div>
                             ))}
                         </div>
                         <div className={s.column}>
-                            <h3 className={s.columnTitle}>Для кого</h3>
+                            <h4>Для кого</h4>
                             {audiences.map((audience, index) => (
-                                <div key={index} className={s.detailItem}>{audience}</div>
+                                <div key={index} className={s.detailItem}>
+                                    {audience}
+                                </div>
                             ))}
                         </div>
                     </div>
