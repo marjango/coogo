@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
-import Catalog from "../pages/Homepage/Catalog";
+import Catalog from "../components/Homepage/Catalog";
+import ContactModal from "../components/Homepage/ContactModal";
 
 import s from'./Header.module.css';
-import viber from '../img/viber.svg'
-import whatsapp from '../img/whatsapp.svg'
-import telegram from '../img/telegram.svg'
-import balance from '../img/balance.svg'
-import heart from '../img/Icon/Outlined/Heart.svg'
-import shoppingCart from '../img/shopping-cart.svg'
-import search from '../img/Icon/Outlined/Search.svg'
-import promoImg from '../img/Icon/Outlined/promo.svg'
+import viber from '../img/header/viber.svg'
+import whatsapp from '../img/header/whatsapp.svg'
+import telegram from '../img/header/telegram.svg'
+import balance from '../img/header/balance.svg'
+import heart from '../img/header/heart.svg'
+import shoppingCart from '../img/header/shopping-cart.svg'
+import search from '../img/header/search.svg'
+import promoImg from '../img/header/promo.svg'
 
 import {Link} from 'react-router-dom'
-
 
 
 function Header() {
@@ -47,7 +47,7 @@ function Header() {
         <div className={s.headerContent}>
             <div className={s.topHeader}>
                 <div className={s.topHeaderLeft}>
-                    <a href="#!">Сервис</a>
+                    <Link to='/Service'> Сервис</Link>
                     <a href="#!">Сотрудничество</a>
                     <a href="#!">Заказать звонок</a>
                     <div className={s.socialLinks}>
@@ -59,7 +59,7 @@ function Header() {
                 <div className={s.topHeaderRight}>
                     <p>+7 (800) 505-54-61</p>
                     <button className={s.plus} onClick={openModal}></button>
-                    
+                    {isModalOpen && <ContactModal onClose={closeModal} />}
                 </div>
             </div>
             <span className={s.border}></span>
@@ -97,11 +97,11 @@ function Header() {
             <div className={s.menu}>
                 <div className={s.menuContent}>
                     <Link to='/About'>О магазине</Link>
-                    <Link to='/Delivery'>Доставка и оплата</Link>
+                    <Link to='/Delivery' className={s.delivery}>Доставка и оплата<span className={s.deliveryspan}>Доступна рассрочка</span></Link>
                     <Link to='/TestDrive'>Тест-драйв</Link>
                     <Link to='/Blog'>Блог</Link>
                     <Link to='/Contacts'>Контакты</Link>
-                    <Link to='/Discounts' className={s.discountsMenu}>Акции<img src={promoImg} alt="" className="promoIcon"/></Link>
+                    <Link to='/Discount' className={s.discountsMenu}>Акции<img src={promoImg} alt="" className="promoIcon"/></Link>
                 </div>
             </div>
         </div>

@@ -1,28 +1,53 @@
 import React from "react";
 import s from '../about/About.module.css';
-import slide from '../../img/certificate.svg';
-import shoppingCart from '../../img/shopping-cart.svg';
-import billfold from '../../img/billfold.svg';
-import guarantee from '../../img/guarantee.svg';
-import delivery from "../../img/delivery.svg";
-import percentage from '../../img/percentage-discount.svg';
-import scooterTiny from '../../img/scooter-tiny.svg';
-import emoji from '../../img/emoji.svg';
-import spec1 from '../../img/spec1.svg';
-import spec2 from '../../img/spec2.svg';
-import spec3 from '../../img/spec3.svg';
-import spec4 from '../../img/spec4.svg';
-import spec5 from '../../img/spec5.svg';
-import service1 from '../../img/service1.svg';
-import service2 from '../../img/service2.svg';
-import service3 from '../../img/service3.svg';
-import service4 from '../../img/service4.svg';
-import service5 from '../../img/service5.svg';
-import service6 from '../../img/service6.svg';
-import aboutvideo from '../../img/aboutvideo.svg';
-import testdriveImg from '../../img/testdriveImg.svg';
+import slide from '../../img/about/certificate.svg';
+import shoppingCart from '../../img/about/shopping-cart.svg';
+import billfold from '../../img/about/billfold.svg';
+import guarantee from '../../img/about/guarantee.svg';
+import delivery from "../../img/about/delivery.svg";
+import percentage from '../../img/about/percentage-discount.svg';
+import scooterTiny from '../../img/about/scooter-tiny.svg';
+import emoji from '../../img/about/emoji.svg';
+import spec1 from '../../img/about/spec1.svg';
+import spec2 from '../../img/about/spec2.svg';
+import spec3 from '../../img/about/spec3.svg';
+import spec4 from '../../img/about/spec4.svg';
+import spec5 from '../../img/about/spec5.svg';
+import service1 from '../../img/about/service1.svg';
+import service2 from '../../img/about/service2.svg';
+import service3 from '../../img/about/service3.svg';
+import service4 from '../../img/about/service4.svg';
+import service5 from '../../img/about/service5.svg';
+import service6 from '../../img/about/service6.svg';
+import aboutvideo from '../../img/about/aboutvideo.svg';
+import testdriveImg from '../../img/about/testdriveImg.svg';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function About() {
+
+    // const slider = document.querySelector('.slides');
+
+    // // Остановка анимации при наведении мыши
+    // document.querySelector('.specList').addEventListener('mouseenter', () => {
+    // slider.style.animationPlayState = 'paused';
+    // });
+
+    // // Продолжение анимации при убирании мыши
+    // document.querySelector('.slider').addEventListener('mouseleave', () => {
+    // slider.style.animationPlayState = 'running';
+    // });
+    () => {
+        const settings = {
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        };
+    };
+
     return (
         <div className={s.main}>
             <div className={s.mainCatalog}>
@@ -140,23 +165,34 @@ function About() {
                         <p>Консультант сервисного центра сопровождает вас на протяжении всего времени эксплуатации и помогает решить возникающие вопросы.</p>
                     </div>
                 </div>
-                <div className={s.specList}>
-                    <div className={s.spec}>
-                        <img src={spec1} alt="" />
-                    </div>
-                    <div className={s.spec}>
-                        <img src={spec2} alt="" />
-                    </div>
-                    <div className={s.spec}>
-                        <img src={spec3} alt="" />
-                    </div>
-                    <div className={s.spec}>
-                        <img src={spec4} alt="" />
-                    </div>
-                    <div className={s.spec}>
-                        <img src={spec5} alt="" />
+                <div className={s.slider}>
+                    <div class={s.slides}>
+                        <div className={s.slide}><img src={spec1} alt="Image 1"/></div>
+                        <div className={s.slide}><img src={spec2} alt="Image 2"/></div>
+                        <div className={s.slide}><img src={spec3} alt="Image 3"/></div>
+                        <div className={s.slide}><img src={spec4} alt="Image 4"/></div>
+                        <div className={s.slide}><img src={spec5} alt="Image 5"/></div>
+
+                        <div className={s.slide}><img src={spec1} alt="Image 1"/></div>
+                        <div className={s.slide}><img src={spec2} alt="Image 2"/></div>
+                        <div className={s.slide}><img src={spec3} alt="Image 3"/></div>
+                        <div className={s.slide}><img src={spec4} alt="Image 4"/></div>
+                        <div className={s.slide}><img src={spec5} alt="Image 5"/></div>
                     </div>
                 </div>
+
+    <Slider {...settings}>
+      <div>
+        <img src='https://via.placeholder.com/350x150' alt='slide-1' />
+      </div>
+      <div>
+        <img src='https://via.placeholder.com/350x150' alt='slide-2' />
+      </div>
+      <div>
+        <img src='https://via.placeholder.com/350x150' alt='slide-3' />
+      </div>
+    </Slider>
+                
             </div>
 
             <div className={s.services}>

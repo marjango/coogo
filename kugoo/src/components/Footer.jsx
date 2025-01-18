@@ -1,25 +1,23 @@
 import React from "react";
 import s from './Footer.module.css'
-
-import googlePlay from '../img/googlePlay.svg'
-import appStore from '../img/appStore.svg'
-import vk from '../img/vk.svg'
-import ig from '../img/ig.svg'
-import youtube from '../img/youtube.svg'
-import tg from '../img/tg.svg'
-import viber from '../img/viber.svg'
-import whatsapp from '../img/whatsapp.svg'
-import telegram from '../img/telegram.svg'
-import googlePay from '../img/gPay.svg'
-import applePay from '../img/applePay.svg'
-import visa from '../img/visa.svg'
-import mastercard from '../img/mastercard.svg'
-import maestro from '../img/maestro.svg'
-import webmoney from '../img/webmoney.svg'
-import qiwi from '../img/qiwi.svg'
-
-
 import {Link} from 'react-router-dom'
+import viber from '../img/header/viber.svg'
+import whatsapp from '../img/header/whatsapp.svg'
+
+import tg from '../img/footer/tg.svg'
+import googlePlay from '../img/footer/googlePlay.svg'
+import appStore from '../img/footer/appStore.svg'
+import vk from '../img/footer/vk.svg'
+import ig from '../img/footer/ig.svg'
+import youtube from '../img/footer/youtube.svg'
+import telegram from '../img/footer/telegram.svg'
+import googlePay from '../img/footer/gPay.svg'
+import applePay from '../img/footer/applePay.svg'
+import visa from '../img/footer/visa.svg'
+import mastercard from '../img/footer/mastercard.svg'
+import maestro from '../img/footer/maestro.svg'
+import webmoney from '../img/footer/webmoney.svg'
+import qiwi from '../img/footer/qiwi.svg'
 
 function Footer() {
     return (

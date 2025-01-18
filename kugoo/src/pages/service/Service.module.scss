@@ -1,0 +1,192 @@
+.mainCatalog {
+    margin: 30px 30px;
+    padding-top: 94px;
+    padding-left: 136px;
+    padding-bottom: 94px;
+    border-radius: 10px;
+    background: 
+    url(./img/woman-with-electric-drill-yellow.svg),
+    radial-gradient(closest-side at 75% 76%, #FFC960 0%, #F3A712 100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    
+    content {
+        display: flex;
+        flex-direction: column;
+        max-width: 612px;
+
+        h1 {
+            margin: 0 0 7px 0;
+            text-transform: uppercase;
+            font-size: 35px;
+            font-weight: 600;
+            text-align: left;
+            color: white;
+        }
+        p {
+            margin: 0;
+            color: white;
+            font-size: 20px;
+        }
+        .description {
+            margin: 28px 0 38px 0;
+            display: flex;
+            gap: 35px;
+
+            p {
+                color: white;
+                font-size: 14px;
+            }
+
+            span {
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .span1 {
+                background-image: url(./img/point.svg);
+                background-color: rgba(255, 255, 255, 0.2); 
+            }
+            .span2 {
+                background-image: url(./img/2.svg);
+                background-color: rgba(255, 255, 255, 0.2); 
+            }
+            .span3 {
+                background-image: url(./img/gear.svg);
+                background-color: rgba(255, 255, 255, 0.2); 
+            }
+
+            .desc {
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .btn {
+            width: 159px;
+            height: 53px;
+            border: none;
+            background-color: white;
+            color: #F3A712;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.infoColumns {
+    margin: 100px 158px 98px 161px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 88px;
+
+    h1 {
+        font-size: 35px;
+        color: #282739;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .columns {
+        display: flex;
+        gap: 40px;
+
+       .col1 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 297px;
+        text-align: right;
+       }
+
+       .col3 {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        text-align: left;
+       }
+
+       h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #282739;
+        margin-bottom: 12px;
+       }
+
+       p {
+        margin: 0;
+        font-size: 14px;
+        color: #282739;
+       }
+
+       .col2 {
+        width: 442px;
+        height: 442px;
+        border: 1px solid #EAEBED;
+        border-radius: 50%;
+        background-image: url(./img/battery-charging-process-gray-electric-motorized-stand-up-scooter.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+    }
+}
+
+.diagnostic {
+    border-radius: 10px;
+    margin: 0 30px 100px 30px;
+    padding: 67px 0;
+    display: flex;
+    justify-content: center;
+    gap: 104px;
+    background-color: #3C89FD;
+
+    .zoomContainer {
+        background-image: url(./img/zoom.svg);
+        width: 521px;
+        height: 263px;
+
+    }
+
+    .zoomInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        max-width: 528px;
+        height: 287px;
+
+        span {
+            width: 62px;
+            height: 27px;
+            background-color: #75D14A;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 35px;
+            color: white;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        button {
+            width: 240px;
+            height: 53px;
+            background-color: white;
+            color: #3C89FD;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}

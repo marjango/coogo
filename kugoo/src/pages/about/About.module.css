@@ -4,7 +4,7 @@
     padding-left: 136px;
     padding-bottom: 94px;
     background-image: linear-gradient(73.21deg, #6F73EE 17.37%, rgba(111, 115, 238, 0) 67.02%), 
-    url(../../img/aboutphoto.svg);
+    url(../../img/about/aboutphoto.svg);
     border-radius: 10px;
     background-position: center;
     background-size: cover;
@@ -126,7 +126,7 @@
 }
 
 .advantages p::before {
-    content: url(../../img/CheckCircle.svg);
+    content: url(../../img/about/checkCircle.svg);
     margin-right: 10px;
     display: inline-block; 
     vertical-align: middle; 
@@ -291,10 +291,33 @@
     height: 52px;
 }
 
-.specList {
+.slides {
     margin-left: 165px;
     display: flex;
     gap: 30px;
+    width: 100%;
+    animation: slide-animation 5s linear infinite ; 
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden; /* Скрываем лишние слайды, которые выходят за пределы */
+    position: relative;
+}
+.slide {
+    min-width: 100%; 
+    box-sizing: border-box;
+  }
+
+  .slide img {
+    display: block;
+}
+
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Смещаем все слайды на 100% влево */
+    }
 }
 
 .services {

@@ -1,0 +1,86 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 58px 45px 40px;
+    width: 80%;
+    max-width: 790px;
+    max-height: 590px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    max-width: 286px;
+}
+
+.Container h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #282739;
+    margin-bottom: 9px;
+}
+
+.Container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #282739;
+}
+
+.links {
+    margin: 7px 0 20px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.links button {
+    width: 77px;
+    height: 57px;
+    border: 1px solid #EAEBED;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.whatsapp {
+    background-image: url(./img/whatsapp.svg);
+}
+.viber {
+    background-image: url(./img/viber.svg);
+}
+.tg {
+    background-image: url(./img/telegram.svg);
+}
+
+.phone {
+    border: 1px solid #EAEBED;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.makeAppointment {
+    width: 263px;
+    height: 53px;
+    border: none;
+    background: #6F73EE;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,50 @@
+.main {
+    height: 200px;
+    background-image: linear-gradient(73.21deg, #6F73EE 17.37%, rgba(111, 115, 238, 0) 67.02%), 
+    url(./img/young-woman-riding-electric-scooter\ 1.svg);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px 30px 100px 30px;
+    padding: 33px 0 0 134px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+}
+
+.span1 {
+    width: 75px;
+    height: 27px;
+    background-color: #EE685F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.span2 { 
+    width: 93px;
+    height: 27px;
+    color: white;
+    background-color: #75D14A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    font-weight: 600;
+    line-height: 50.58px;
+}

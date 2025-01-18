@@ -1,0 +1,61 @@
+/* Modal Overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modalContent {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 247px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Contacts Layout */
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactItem {
+    border-radius: 8px;
+}
+
+.contactTitle {
+    font-size: 12px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    line-height: 17.34px;
+    text-align: left;
+    color: #5D6C7B;
+}
+
+.contactPhone {
+    font-size: 16px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    line-height: 23.12px;
+    text-align: left;
+    font-weight: bold;
+    color: #282739;
+}
+
+.contactSchedule {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.34px;
+    text-align: left;
+    color: #282739;
+}

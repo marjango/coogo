@@ -18,7 +18,7 @@
 //       dots.forEach(dot => {
 //         dot.computedStyleMap.backgroundColor = randomColor
 //       })
-//     }, 2000)
+//     }, 1000)
 //   })
 
   import React from "react"

@@ -49,14 +49,35 @@ a {
 }
 
 .plus {
-  background-image: url('../img/plus.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  width: 20px;
-  height: 20px;
+  background: transparent;
+  border: 1px solid #5D6C7B;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
 }
-                
+.plus::before,
+.plus::after {
+    content: '';
+    position: absolute;
+    background-color: #5D6C7B;
+}
+.plus::before {
+  width: 8px;
+  height: 1px;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+}
+
+.plus::after {
+  width: 1px;
+  height: 8px;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .mainHeader {
   margin: 30px 165px 35px;
@@ -169,7 +190,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
 }
 
 .menu {
@@ -185,27 +206,29 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.menuContent .discountsMenu {
+.discountsMenu {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.promo {
-  display: flex;
-  align-items: center;
+.delivery {
+  position: relative;
+  margin-right: 114px;
 }
 
-.promoText {
-  font-size: 24px; 
-  font-weight: bold;
+.delivery .deliveryspan {
+  position: absolute;
+  top: 0;
+  right: -114px;
+  width: 106px;
+  height: 17px;
+  border-radius: 300px;
+  background-color: #6F73EE;
+  border: none;
   color: white;
-  margin-right: 8px; 
-}
-
-.promoIcon {
-  width: 20px; 
-  height: 20px; 
-  border-radius: 50%; 
-  background-color: #6f7ce2; 
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

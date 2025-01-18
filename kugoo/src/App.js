@@ -1,5 +1,4 @@
 
-import './styles/common.css' 
 import Header from './components/Header.jsx'
 import Routes from './components/Routes.jsx'
 import Footer from './components/Footer'
@@ -13,7 +12,7 @@ const [loading, setLoading] = useState(true);
 useEffect(()=> {
   setTimeout(() => {
     setLoading(false)
-  }, 5000)
+  }, 2000)
 }, [])
 
 if (loading) {

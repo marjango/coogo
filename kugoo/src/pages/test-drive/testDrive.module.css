@@ -1,0 +1,169 @@
+.mainCatalog {
+    margin: 30px 30px;
+    padding-top: 94px;
+    padding-left: 136px;
+    padding-bottom: 94px;
+    background-image: linear-gradient(73.21deg, #6F73EE 17.37%, rgba(111, 115, 238, 0) 67.02%), 
+    url(./img/young-woman-riding-electric-scooter.svg);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 612px;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    color: rgb(114, 90, 90);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+.address {
+    position: relative;
+    padding-left: 20px;
+}
+.address span {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%); 
+    width: 15px; 
+    height: 15px; 
+    background-image: url(./img/point.svg);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+.hours {
+    opacity: 70%;
+}
+
+.content h1 {
+    margin: 0 0 7px 0;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+}
+
+.content p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.description {
+    margin: 28px 0 38px 0;
+    display: flex;
+    gap: 35px;
+}
+
+.description span {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.span1 {
+    background-image: url(./img/scooter-svgrepo-com.svg);
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+.span2 {
+    background-image: url(./img/energy-svgrepo-com.svg);
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.desc {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.description p {
+    color: white;
+    font-size: 14px;
+}
+
+.btn {
+    width: 159px;
+    height: 53px;
+    border: none;
+    background-color: white;
+    color: #6F73EE;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* ... */
+
+.testDriveInfo {
+    padding:  28px 85px 35px 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 645px;
+}
+
+.testDriveInfo h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+    color: #282739;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.list p {
+    margin: 0;
+    color: #282739;
+    font-size: 20px;
+}
+
+.list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list ul li {
+    position: relative;
+    padding-left: 30px;
+}
+
+
+.list span {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%); 
+    width: 22px; 
+    height: 22px; 
+    background-image: url(./img/Icon/Outlined/CheckCircle.svg);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+.testDriveContent {
+    margin-top: 42px;
+    display: flex;
+}
+
+.testDriveContentReverse {
+    margin: 100px 0 100px 30px;
+    display: flex;
+}
